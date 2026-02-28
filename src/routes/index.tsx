@@ -604,7 +604,7 @@ function HandCalculator() {
                     class="w-16 h-24 md:w-20 md:h-28 rounded-sm border-2 flex items-center justify-center transition-all duration-200"
                     classList={{
                       'border-border bg-muted/50': !card(),
-                      'border-primary bg-foreground cursor-pointer hover:border-primary/70': !!card(),
+                      'border-primary bg-card cursor-pointer hover:border-primary/70': !!card(),
                     }}
                     onClick={() => card() && handleCardClick(card()!)}
                   >
@@ -634,7 +634,7 @@ function HandCalculator() {
               classList={{
                 'border-primary/50 border-dashed bg-primary/5': !starterCard() && selectingStarter(),
                 'border-border bg-muted/50': !starterCard() && !selectingStarter(),
-                'border-primary bg-foreground cursor-pointer hover:border-primary/70': !!starterCard(),
+                'border-primary bg-card cursor-pointer hover:border-primary/70': !!starterCard(),
               }}
               onClick={() => starterCard() && handleCardClick(starterCard()!)}
             >
